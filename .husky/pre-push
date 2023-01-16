@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn pretty-quick --verbose --check --staged
+yarn run pretty-quick --verbose --check --staged

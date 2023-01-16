@@ -39,9 +39,9 @@
 .footerItemTextContainer {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: start;
-	align-items: start;
+	flex-direction: column !important;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 @media (min-width: 467px) {

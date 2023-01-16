@@ -1,32 +1,21 @@
 'use client';
-import { useStyles } from './style';
 
 // Next
-import { Poppins } from '@next/font/google';
 import Image from 'next/image';
 
 // Material UI
+import { useStyles } from './style';
 import { Divider, Grid } from '@mui/material';
 
 // Components
-import { DrawerComponent } from '../drawer/Drawer';
-
-// Hooks
-import useMediaQuery from '@hooks/useMediaQuery';
-
-const poppins = Poppins({
-	weight: '400',
-	subsets: ['latin']
-});
+import { DrawerComponent } from '@components/Layout/drawer';
 
 export const Navbar = () => {
 	const classes = useStyles();
-	const matches = useMediaQuery('(max-width: 375px)');
 
 	return (
 		<header>
 			<Grid
-				className={classes.navbar}
 				container
 				justifyContent="space-between"
 				alignItems="flex-end"
@@ -44,6 +33,7 @@ export const Navbar = () => {
 						alt="logo"
 						width={120}
 						height={50}
+						priority
 					/>
 				</Grid>
 				<Grid
@@ -54,16 +44,14 @@ export const Navbar = () => {
 					md={4}
 					lg={3}
 					xl={2}>
-					{matches && <DrawerComponent />}
+					<DrawerComponent />
 				</Grid>
 			</Grid>
 
-			{matches && (
-				<Divider
-					light={true}
-					sx={{ background: 'white' }}
-				/>
-			)}
+			<Divider
+				className={classes.divider}
+				light={true}
+			/>
 		</header>
 	);
 };

@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import Link from 'next/link';
 
-import Line from '@assets/line.svg';
+import Line from '@assets/Line.svg';
 
 // Material
 import { Box, List, Divider, ListItemButton, ListItemIcon, ListItemText, ListItem, Button, Drawer } from '@mui/material';

@@ -24,14 +24,14 @@ const drawerItems: IDrawerItems[] = [
 		Discover: {
 			icon: <PublicIcon />,
 			text: 'Discover',
-			path: '/'
+			path: '#'
 		}
 	},
 	{
 		'What we do': {
 			icon: <DataObjectIcon />,
 			text: 'What we do',
-			path: '/'
+			path: '#'
 		}
 	},
 	{
@@ -73,7 +73,7 @@ export const DrawerComponent = () => {
 									<Link
 										key={key}
 										href={value.path}
-										target="_blank">
+										target={value.path !== '#' ? '_blank' : ''}>
 										<ListItem
 											key={key}
 											disablePadding>

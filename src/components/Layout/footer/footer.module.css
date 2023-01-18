@@ -1,11 +1,10 @@
 .footer {
-	position: fixed;
+	/* position: fixed; */
 	bottom: 0;
 	background: #23262f;
 }
 
 .footerTitle {
-	font-family: 'Poppins', sans-serif !important;
 	font-weight: 400;
 	font-size: 16px;
 	color: #fcfcfd;

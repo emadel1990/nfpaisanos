@@ -1,3 +1,7 @@
+export interface IMultipleNFPaisano {
+	paisano: INFPaisano[];
+}
+
 export interface INFPaisano {
 	id: number;
 	instantPrice: string;

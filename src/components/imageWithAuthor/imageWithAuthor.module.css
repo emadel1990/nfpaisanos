@@ -1,0 +1,42 @@
+.singleAuction_article {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.singleAuction_image {
+	border-radius: 16px;
+	height: 380px !important;
+	width: 80%;
+	object-fit: cover;
+}
+
+.author {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 20px;
+	padding-left: 5px;
+	width: 80%;
+	font-size: 33px;
+	letter-spacing: 0.02em;
+}
+.singleAuction_title {
+	width: 100%;
+	text-align: left;
+}
+
+.title_2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.copyright {
+	font-size: 20px !important;
+	padding-left: 5px;
+}

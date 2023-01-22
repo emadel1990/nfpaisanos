@@ -19,13 +19,14 @@
 				"name": "next"
 			}
 		],
-		"baseUrl": ".",
+		"baseUrl": "./",
 		"paths": {
 			"@/*": ["./*"],
 			"@src/*": ["./src/*"],
 			"@components/*": ["./src/components/*"],
 			"@context/*": ["./src/context/*"],
 			"@hooks/*": ["./src/hooks/*"],
+			"@enums/*": ["./src/enums/*"],
 			"@interfaces/*": ["./src/interfaces/*"],
 			"@services/*": ["./src/services/*"],
 			"@assets/*": ["./src/assets/*"],

@@ -23,19 +23,3 @@
 	text-align: center;
 	max-width: 300px;
 }
-
-.btnExplore {
-	cursor: pointer;
-	border: 2px solid #777e91;
-	background-color: transparent;
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	border-radius: 40px;
-	margin-top: 20px;
-	transition: all 250ms ease-in-out;
-}
-
-.btnExplore:hover {
-	background-color: #777e919a;
-}

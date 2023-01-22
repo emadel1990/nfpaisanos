@@ -8,7 +8,7 @@
 
 .singleAuction_image {
 	border-radius: 16px;
-	height: 380px !important;
+	height: 100% !important;
 	width: 80%;
 	object-fit: cover;
 }
@@ -20,8 +20,9 @@
 	margin-top: 20px;
 	padding-left: 5px;
 	width: 80%;
-	font-size: 33px;
-	letter-spacing: 0.02em;
+	font-size: 50px;
+	letter-spacing: -0.02em;
+	line-height: 64px;
 }
 .singleAuction_title {
 	width: 100%;
@@ -37,6 +38,7 @@
 }
 
 .copyright {
-	font-size: 20px !important;
+	font-weight: 400;
+	font-size: 64px !important;
 	padding-left: 5px;
 }

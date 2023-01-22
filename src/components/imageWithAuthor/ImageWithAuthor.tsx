@@ -20,11 +20,6 @@ export const ImageWithAuthor = ({ paisano }: { paisano: INFPaisano }) => {
 				className={style.singleAuction_image}
 			/>
 			<div className={style.author}>
-				{/* <h1 className={style.singleAuction_title}>{`${paisano.author.split(' ')[0]} `}</h1>
-				<div className={style.title_2}>
-					<h1>{`${paisano.author.split(' ').slice(1).join(' ')}`}</h1>
-					<h4 className={style.copyright}>&#174;</h4>
-				</div> */}
 				<h1 className={`${style.sincleAuction_title} ${dm_sans.className}`}>{`Marco`}</h1>
 				<div className={style.title_2}>
 					<h1 className={dm_sans.className}>{`carrillo`}</h1>

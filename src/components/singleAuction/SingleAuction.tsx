@@ -5,14 +5,15 @@ import style from './singleAuction.module.css';
 import { randomPaisano } from '@src/utils/randomPaisano';
 
 import { ImageWithAuthor } from '../imageWithAuthor/ImageWithAuthor';
-import { INFPaisano } from '@interfaces/nfpaisano';
-import { MiniCard } from '../globals/miniCard/MiniCard';
+import { IETH_USD, INFPaisano } from '@interfaces/nfpaisano';
+import { MiniCard } from '../miniCard/MiniCard';
 
 export interface SingleAuctionProps {
 	paisanos: INFPaisano[];
+	ethPrice: IETH_USD;
 }
 
-export const SingleAuction = ({ paisanos }: SingleAuctionProps) => {
+export const SingleAuction = ({ paisanos, ethPrice }: SingleAuctionProps) => {
 	const [random, setRandom] = useState<number>(Number(randomPaisano(0, paisanos.length - 1)));
 
 	const exploreRandom = () => {
@@ -28,8 +29,10 @@ export const SingleAuction = ({ paisanos }: SingleAuctionProps) => {
 				className={style.btnExplore}>
 				Explore
 			</button>
-			<ImageWithAuthor paisano={paisanos[random]} />
-			<MiniCard paisano={paisanos[random]} />
+			<ImageWithAuthor
+				paisano={paisanos[random]}
+				ethPrice={ethPrice}
+			/>
 		</section>
 	);
 };

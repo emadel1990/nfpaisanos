@@ -31,3 +31,8 @@ export interface INFPaisano {
 		}
 	];
 }
+
+export interface IETH_USD {
+	eth: string;
+	usd: string;
+}

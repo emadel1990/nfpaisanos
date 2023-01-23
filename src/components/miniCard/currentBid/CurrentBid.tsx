@@ -24,13 +24,14 @@ export interface CurrentBidProps {
 
 export const CurrentBid = ({ paisano, ethPrice }: CurrentBidProps) => {
 	const [usdPrice, setUsdPrice] = useState<number>(1);
-	const [time] = useState<Date>(new Date(paisano.endsAt));
+	const [time, setTime] = useState<Date>(new Date(paisano.endsAt));
 
 	useEffect(() => {
 		const usd = Number(ethPrice.usd.replace(/[^0-9.-]+/g, ''));
 		const eth = Number(ethPrice.eth.replace(/[^0-9.-]+/g, ''));
 		const paisa = parseFloat(paisano.highestBid.split(' ')[0]);
 		setUsdPrice((prev) => (prev = (usd * paisa) / eth));
+		setTime((prev) => (prev = new Date(paisano.endsAt)));
 	}, [paisano, ethPrice]);
 
 	return (

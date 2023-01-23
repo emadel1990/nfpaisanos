@@ -1,5 +1,6 @@
 export async function getService<T>(url: string): Promise<T> {
 	let myHeaders = new Headers();
+
 	myHeaders.append('apiKey', process.env.API_KEY || '');
 
 	const requestOptions = {

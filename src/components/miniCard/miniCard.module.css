@@ -1,7 +1,14 @@
+.miniCardContainer {
+	display: flex;
+	flex-direction: column;
+}
+
 .miniCard {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
-	width: 80%;
+	justify-content: space-around;
+	/* width: 100%; */
 	padding-left: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -28,8 +35,8 @@
 }
 
 .creatorSpan {
-	min-height: 30px;
-	padding-left: 2px;
+	min-height: 40px;
+	padding-left: 4px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -39,10 +46,11 @@
 .creatorP {
 	white-space: nowrap;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 13px !important;
 	line-height: 20px;
 	color: #777e91;
+	letter-spacing: 0.1px;
 }
 
 .authorP {
@@ -52,4 +60,32 @@
 	font-size: 1rem;
 	line-height: 14px;
 	white-space: wrap;
+	letter-spacing: 0.2px;
+}
+
+.placeBidBtn {
+	width: 304px;
+	border-radius: 90px;
+	min-height: 52px;
+	background-color: #3772ff;
+	color: #fcfcfd;
+	align-self: center;
+	font-size: 15px;
+}
+
+.viewBtn {
+	width: 304px;
+	font-size: 15px;
+	border-radius: 90px;
+	min-height: 52px;
+	background-color: #0000;
+	color: #fcfcfd;
+	align-self: center;
+	border: 2px solid #fcfcfd3a;
+	margin-top: 8px;
+	transition: all 250ms ease-in-out;
+}
+
+.viewBtn:hover {
+	background-color: #777e919a;
 }

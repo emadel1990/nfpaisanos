@@ -10,7 +10,9 @@
 	border-radius: 16px;
 	height: 100% !important;
 	width: 80%;
+	max-width: 500px;
 	object-fit: cover;
+	transition: all 0.3s ease-in-out;
 }
 
 .author {
@@ -41,4 +43,28 @@
 	font-weight: 400;
 	font-size: 64px !important;
 	padding-left: 5px;
+}
+
+@media (min-width: 750px) {
+	.singleAuction_article {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 4rem;
+		margin-top: 100px;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.singleAuction_image {
+		max-width: 400px;
+		min-width: 300px;
+	}
+
+	.author {
+		width: auto;
+		margin-top: 0;
+	}
 }

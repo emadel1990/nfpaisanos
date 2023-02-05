@@ -1,9 +1,11 @@
-import { IETH_USD, INFPaisano } from '@interfaces/nfpaisano';
 import style from './miniCard.module.css';
 import Image from 'next/image';
 import eth from '@assets/eth.svg';
-import { CurrentBid } from './currentBid/CurrentBid';
 import { DM_Sans } from '@next/font/google';
+
+import { RoundedBtn } from '@components/globals/roundBtn/RoundBtn';
+import { IETH_USD, INFPaisano } from '@interfaces/nfpaisano';
+import { CurrentBid } from './currentBid/CurrentBid';
 
 const dm_sans = DM_Sans({
 	weight: '700',
@@ -56,6 +58,10 @@ export const MiniCard = ({ paisano, ethPrice }: MiniCardProps) => {
 			/>
 			<button className={`${style.placeBidBtn} - ${dm_sans.className}`}>Place a bid</button>
 			<button className={`${style.viewBtn} - ${dm_sans.className}`}>View item</button>
+			<div className={style.roundedBtn}>
+				<RoundedBtn back={true} />
+				<RoundedBtn back={false} />
+			</div>
 		</div>
 	);
 };

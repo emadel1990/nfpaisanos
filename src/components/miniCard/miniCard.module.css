@@ -89,3 +89,16 @@
 .viewBtn:hover {
 	background-color: #777e919a;
 }
+
+.roundedBtn {
+	display: flex;
+	flex-wrap: nowrap;
+	column-gap: 15px;
+	justify-content: center;
+}
+
+@media (min-width: 750px) {
+	.roundedBtn {
+		justify-content: flex-start;
+	}
+}

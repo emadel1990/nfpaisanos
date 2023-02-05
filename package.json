@@ -6,10 +6,11 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
+		"lint": "next lint --ext .js,.jsx,.ts,.tsx src --color",
 		"prepare": "husky install",
 		"test": "jest",
-		"coverage": "jest --coverage"
+		"coverage": "jest --coverage",
+		"prettier": "prettier '**/*.{js,jsx,ts,tsx}' --write"
 	},
 	"dependencies": {
 		"@emotion/react": "^11.10.5",
@@ -40,7 +41,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "pretty-quick lint-staged"
+			"pre-commit": "pretty-quick lint-staged prettier"
 		}
 	}
 }

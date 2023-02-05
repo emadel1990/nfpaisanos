@@ -11,8 +11,8 @@ export interface INFPaisano {
 	type: string;
 	stock: number;
 	likes: number;
-	createdAt: Date;
-	endsAt: Date;
+	createdAt: string;
+	endsAt: string;
 	media: {
 		id: number;
 		image: string;

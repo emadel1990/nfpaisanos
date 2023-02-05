@@ -40,7 +40,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "pretty-quick --check --staged --verbose"
+			"pre-commit": "pretty-quick lint-staged"
 		}
 	}
 }

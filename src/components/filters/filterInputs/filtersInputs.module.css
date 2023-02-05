@@ -1,0 +1,19 @@
+.filtersInputsContainer {
+	width: 100%;
+}
+
+.filterSearchFC {
+	width: 100%;
+}
+
+.filterSearchInput {
+	height: 65px;
+	border-radius: 15px;
+	border: 2px solid #fcfcfd3a;
+}
+
+.filterSearchInput2::placeholder {
+	color: #ffffff !important;
+	opacity: 1;
+	-webkit-text-fill-color: #fcfcfd !important;
+}

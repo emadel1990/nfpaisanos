@@ -1,0 +1,12 @@
+.priceRange {
+	font-size: 12px;
+	line-height: 12px;
+	color: #b1b5c4;
+}
+
+.priceEth {
+	font-size: 12px;
+	line-height: 24px;
+	color: #fcfcfd;
+	font-weight: 500;
+}

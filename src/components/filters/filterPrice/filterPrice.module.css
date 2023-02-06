@@ -1,13 +1,12 @@
-.slider {
-	position: relative;
-	height: 200px;
-	width: 200px;
+.priceRange {
+	font-size: 12px;
+	line-height: 12px;
+	color: #b1b5c4;
 }
 
-.slide {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
+.priceEth {
+	font-size: 12px;
+	line-height: 24px;
+	color: #fcfcfd;
+	font-weight: 500;
 }

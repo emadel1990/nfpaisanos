@@ -3,7 +3,7 @@
 	border-radius: 15px;
 	border: 2px solid #fcfcfd3a;
 	margin-top: 15px;
-	margin-bottom: 500px;
+	transition: all 0.2s ease-in-out;
 }
 
 .menuPaper {
@@ -48,5 +48,33 @@
 .itemSelected {
 	display: flex;
 	align-items: center;
+	margin-left: 5px;
+}
+
+.resetFilter {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.resetFiltersBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	min-width: 0px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+.resetFiltersBtn:hover {
+	background-color: #e6e8ec8a;
+}
+
+.resetFilterText {
+	color: #f4f5f6;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
 	margin-left: 5px;
 }

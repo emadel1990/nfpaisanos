@@ -26,6 +26,7 @@ export const ImageWithAuthor = ({ paisano, ethPrice }: ImageWithAuthorProps) => 
 	const matches = useMediaQueries('(min-width: 750px)');
 
 	useEffect(() => {
+		console.log(paisano);
 		if (!matches) {
 			setTitle((prev: string) => (prev = `Marco`));
 			setSubTitle((prev: string) => (prev = `carrillo`));
@@ -40,10 +41,17 @@ export const ImageWithAuthor = ({ paisano, ethPrice }: ImageWithAuthorProps) => 
 			<Image
 				src={paisano?.media?.image2x}
 				alt={'image'}
-				width={100}
-				height={100}
+				width={1000}
+				height={1000}
+				priority
+				quality={100}
 				className={style.singleAuction_image}
 			/>
+			{/* <img
+				src={`${paisano?.media?.image2x}`}
+				alt={'image'}
+				className={style.singleAuction_image}
+			/> */}
 			<div className={style.author}>
 				<h1 className={`${style.sincleAuction_title} ${dm_sans.className}`}>{title}</h1>
 				<div className={style.title_2}>

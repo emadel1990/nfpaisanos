@@ -1,19 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import style from './selectColors.module.css';
 
-import { Poppins } from '@next/font/google';
-import Box from '@mui/material/Box';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import { Poppins, DM_Sans } from '@next/font/google';
+import { Box, MenuItem, FormControl, Select, SelectChangeEvent, OutlinedInput, Typography, Divider, Stack, Button } from '@mui/material';
 import { Experimental_CssVarsProvider as CssVarsProvider, experimental_extendTheme as extendTheme } from '@mui/material/styles';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import Typography from '@mui/material/Typography/Typography';
 import { MenuProps, CIRCLE_COLORS, myTheme } from './helpers';
+import CancelIcon from '@mui/icons-material/Cancel';
 
 const poppins = Poppins({
 	weight: ['400', '700'],
+	style: 'normal',
+	subsets: ['latin']
+});
+
+const dmSans = DM_Sans({
+	weight: '700',
 	style: 'normal',
 	subsets: ['latin']
 });
@@ -23,11 +25,12 @@ export const SelectColors = () => {
 	const [open, setOpen] = useState(false);
 
 	useEffect(() => {
-		const body = document.querySelector('html');
-		if (body && open) {
-			body.style.setProperty('overflow-y', 'hidden');
-		} else if (body && !open) {
-			body.style.setProperty('overflow-y', 'auto');
+		const html = document.querySelector('html');
+		const menu = document.getElementById('menu-dd');
+		if (html && open) {
+			/* html.style.setProperty('overflow-y', 'hidden'); */
+		} else if (html && !open) {
+			html.style.setProperty('overflow-y', 'auto');
 		}
 	}, [open]);
 
@@ -50,6 +53,7 @@ export const SelectColors = () => {
 						onClose={() => setOpen(false)}
 						open={open}
 						className={style.selectColors}
+						sx={{ marginBottom: `${open ? '300px' : '10px'}` }}
 						IconComponent={() => (
 							<KeyboardArrowDownIcon
 								onClick={handleOpenClose}
@@ -138,6 +142,22 @@ export const SelectColors = () => {
 						</MenuItem>
 					</Select>
 				</FormControl>
+				<Divider sx={{ mt: 2, mb: 2, borderColor: '#353945' }} />
+				{colors.trim().length > 0 && (
+					<Stack
+						className={style.resetFilter}
+						flex={1}
+						columnGap={1}
+						flexDirection={'row'}
+						alignItems={'center'}>
+						<Button
+							onClick={() => setColors('')}
+							className={style.resetFiltersBtn}>
+							<CancelIcon />
+						</Button>
+						<Typography className={`${dmSans.className} ${style.resetFilterText}`}>Reset filter</Typography>
+					</Stack>
+				)}
 			</Box>
 		</CssVarsProvider>
 	);

@@ -1,9 +1,12 @@
-.filtersInputsContainer {
-	width: 100%;
+.likes {
+	font-size: 12px;
+	line-height: 12px;
+	color: #b1b5c3;
 }
 
 .filterSearchFC {
 	width: 100%;
+	margin-top: 15px;
 }
 
 .filterSearchInput {

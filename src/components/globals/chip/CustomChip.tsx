@@ -26,7 +26,8 @@ export const CustomChip = ({ label, selected }: IChip) => {
 				fontSize: '15px',
 				lineHeight: '32px',
 				height: '100%',
-				backgroundColor: isSelected ? '#E6E8EC' : ''
+				backgroundColor: isSelected ? '#E6E8EC' : '',
+				transition: 'all 0.3s ease-in-out'
 			}}
 			color={'default'}
 			clickable={true}

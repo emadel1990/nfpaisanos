@@ -1,0 +1,80 @@
+.selectColors {
+	height: 52px;
+	border-radius: 15px;
+	border: 2px solid #fcfcfd3a;
+	margin-top: 15px;
+	transition: all 0.2s ease-in-out;
+}
+
+.menuPaper {
+	margin-top: 15px; /* Neutrals/2 */
+
+	padding: 0px 10px;
+
+	background: #23262f;
+	/* Neutrals/3 */
+
+	border: 2px solid #353945;
+	/* depth/4 */
+
+	box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+	border-radius: 12px;
+}
+
+.menuPaper li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.menuPaper li:hover {
+	background: #141416;
+	border-radius: 8px;
+}
+
+.colorCircle {
+	margin-top: -3px;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.menuItem {
+	font-size: 14px;
+}
+
+.itemSelected {
+	display: flex;
+	align-items: center;
+	margin-left: 5px;
+}
+
+.resetFilter {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.resetFiltersBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	min-width: 0px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+.resetFiltersBtn:hover {
+	background-color: #e6e8ec8a;
+}
+
+.resetFilterText {
+	color: #f4f5f6;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	margin-left: 5px;
+}

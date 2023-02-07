@@ -79,7 +79,7 @@ export const CustomSlider = () => {
 			getAriaValueText={valueLabelFormat}
 			valueLabelFormat={valueLabelFormat}
 			min={0.01}
-			max={100.0}
+			max={10}
 			step={0.01}
 		/>
 	);

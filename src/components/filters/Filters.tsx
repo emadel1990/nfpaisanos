@@ -5,6 +5,8 @@ import style from './filters.module.css';
 import { FiltersChips } from './filterChips';
 import { FiltersInputs } from './filterInputs';
 import { FilterPrice } from './filterPrice';
+import { Divider } from '@mui/material';
+import { SecondFilters } from './secondFilters/SecondFilters';
 
 export const Filters = () => {
 	return (
@@ -12,6 +14,8 @@ export const Filters = () => {
 			<FiltersInputs />
 			<FiltersChips />
 			<FilterPrice />
+			<Divider sx={{ mt: 2, mb: 2, borderColor: '#353945' }} />
+			<SecondFilters />
 		</div>
 	);
 };

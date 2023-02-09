@@ -1,11 +1,9 @@
-.filtersInputsContainer {
-	margin-top: 80px;
-	width: 100%;
+.filtersChipsContainer {
+	transition: all 250ms ease-in-out;
 }
 
 .filterSearchFC {
 	width: 100%;
-	transition: all 0.3s ease-in-out;
 }
 
 .filterSearchInput {
@@ -28,13 +26,25 @@
 
 @media (min-width: 750px) {
 	.filterSearchFC {
-		padding: 0 0%;
+		min-width: 300px;
+	}
+
+	.filtersChipsContainer {
+		align-self: center;
+		width: 100%;
+		padding: 0;
+	}
+	.containerChips {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 10px;
 	}
 }
 
 @media (min-width: 990px) {
-	.filterSearchFC {
+	.filtersChipsContainer {
 		max-width: 70rem;
-		padding: 0;
+		padding: 0 0;
 	}
 }

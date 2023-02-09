@@ -1,3 +1,11 @@
+.filterPriceContainer {
+	width: 100%;
+}
+
+.filterPriceStack {
+	width: 100%;
+}
+
 .priceRange {
 	font-size: 12px;
 	line-height: 12px;
@@ -10,3 +18,32 @@
 	color: #fcfcfd;
 	font-weight: 500;
 }
+
+.customDivider {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-color: #353945;
+}
+
+/* @media (min-width: 750px) {
+	.filterPriceContainer {
+		display: flex;
+		flex-direction: column;
+		padding: 0 5%;
+	}
+	.filterPriceStack {
+		width: 400px;
+	}
+} */
+
+/* @media (min-width: 990px) {
+	.filterPriceContainer {
+		align-self: center;
+		width: 930px;
+		padding: 0;
+	}
+	.filterPriceStack {
+		width: 400px;
+	}
+} */

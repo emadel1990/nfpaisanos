@@ -78,3 +78,10 @@
 	line-height: 16px;
 	margin-left: 5px;
 }
+
+.customDivider {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-color: #353945;
+}

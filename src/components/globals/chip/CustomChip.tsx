@@ -26,6 +26,7 @@ export const CustomChip = ({ label, selected }: IChip) => {
 				fontSize: '15px',
 				lineHeight: '32px',
 				height: '100%',
+				maxHeight: '32px',
 				backgroundColor: isSelected ? '#E6E8EC' : '',
 				transition: 'all 0.3s ease-in-out'
 			}}

@@ -45,7 +45,7 @@
 
 @media (min-width: 467px) {
 	.footer {
-		background: black;
+		background: #141416;
 	}
 	.footerItemTextContainer {
 		display: flex;
@@ -72,5 +72,26 @@
 @media (max-width: 467px) {
 	.dividerFooterTop {
 		display: none;
+	}
+}
+
+@media (min-width: 750px) {
+	.footerLogo {
+		width: 15rem;
+		height: 8rem;
+	}
+
+	.footerTitle {
+		font-size: 1.8rem;
+	}
+
+	.footer {
+		/* position: fixed; */
+		bottom: 0;
+		background: #141416;
+	}
+
+	.doneBy {
+		font-size: 1.4rem;
 	}
 }

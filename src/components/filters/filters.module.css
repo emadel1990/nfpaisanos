@@ -1,7 +1,53 @@
 .filtersContainer {
 	display: flex;
 	flex-direction: column;
-	padding: 0 10%;
 	width: 100%;
-	height: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.filtersBox {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.stackFilters {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	width: 100%;
+}
+
+@media (min-width: 750px) {
+	.filtersContainer {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	.stackFilters {
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		width: 100%;
+		align-self: center;
+		justify-content: space-between;
+	}
+	.filtersBox {
+		max-width: 300px;
+	}
+}
+
+@media (min-width: 990px) {
+	.stackFilters {
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		max-width: 70rem;
+		align-self: center;
+		justify-content: space-between;
+	}
+	.filtersBox {
+		max-width: 300px;
+	}
 }

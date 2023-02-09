@@ -47,11 +47,6 @@ export const ImageWithAuthor = ({ paisano, ethPrice }: ImageWithAuthorProps) => 
 				quality={100}
 				className={style.singleAuction_image}
 			/>
-			{/* <img
-				src={`${paisano?.media?.image2x}`}
-				alt={'image'}
-				className={style.singleAuction_image}
-			/> */}
 			<div className={style.author}>
 				<h1 className={`${style.sincleAuction_title} ${dm_sans.className}`}>{title}</h1>
 				<div className={style.title_2}>

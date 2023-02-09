@@ -7,15 +7,20 @@ import { FiltersInputs } from './filterInputs';
 import { FilterPrice } from './filterPrice';
 import { Divider } from '@mui/material';
 import { SecondFilters } from './secondFilters/SecondFilters';
+import { Box, Stack } from '@mui/material';
 
 export const Filters = () => {
 	return (
 		<div className={style.filtersContainer}>
 			<FiltersInputs />
 			<FiltersChips />
-			<FilterPrice />
-			<Divider sx={{ mt: 2, mb: 2, borderColor: '#353945' }} />
-			<SecondFilters />
+			<Stack className={style.stackFilters}>
+				<Box className={style.filtersBox}>
+					<FilterPrice />
+					<SecondFilters />
+				</Box>
+				<Box>ASD</Box>
+			</Stack>
 		</div>
 	);
 };

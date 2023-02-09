@@ -1,3 +1,4 @@
+import style from './app.module.css';
 import { INFPaisano, IETH_USD } from './interfaces/nfpaisano';
 import { Hero } from '@components/globals/hero';
 import { SingleAuction } from '@components/singleAuction';
@@ -11,7 +12,7 @@ export interface ISingleAuctionProps {
 
 export const App = ({ auctions, ethPrice, popular }: ISingleAuctionProps) => {
 	return (
-		<div>
+		<div className={style.app}>
 			<Hero />
 			<SingleAuction
 				paisanos={auctions}

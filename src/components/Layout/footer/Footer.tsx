@@ -2,11 +2,19 @@
 
 import style from './footer.module.css';
 
+import { Poppins } from '@next/font/google';
+
 // Next
 import Image from 'next/image';
 
 // Material UI
 import { Divider, Grid, Typography, Box } from '@mui/material';
+
+const poppins = Poppins({
+	weight: '400',
+	style: 'normal',
+	subsets: ['latin']
+});
 
 export const Footer = () => {
 	return (
@@ -27,6 +35,7 @@ export const Footer = () => {
 				lg={10}
 				xl={10}>
 				<Image
+					className={style.footerLogo}
 					src="/logo.svg"
 					alt="logo"
 					width={120}
@@ -34,8 +43,8 @@ export const Footer = () => {
 					priority
 				/>
 				<Box className={style.boxText}>
-					<Typography className={style.footerTitle}>The New Creative</Typography>
-					<Typography className={style.footerTitle}>Economy.</Typography>
+					<Typography className={`${style.footerTitle} ${poppins.className}`}>The New Creative</Typography>
+					<Typography className={`${style.footerTitle} ${poppins.className}`}>Economy.</Typography>
 				</Box>
 			</Grid>
 			<Divider
@@ -50,7 +59,7 @@ export const Footer = () => {
 				md={10}
 				lg={10}
 				xl={10}>
-				<Typography className={style.doneBy}>
+				<Typography className={`${style.doneBy} ${poppins.className}`}>
 					Created with <span style={{ color: 'red' }}>♥</span> by Emanuel Delgado
 				</Typography>
 			</Grid>

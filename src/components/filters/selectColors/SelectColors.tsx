@@ -142,7 +142,7 @@ export const SelectColors = () => {
 						</MenuItem>
 					</Select>
 				</FormControl>
-				<Divider sx={{ mt: 2, mb: 2, borderColor: '#353945' }} />
+				<Divider className={style.customDivider} />
 				{colors.trim().length > 0 && (
 					<Stack
 						className={style.resetFilter}

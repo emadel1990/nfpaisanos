@@ -18,6 +18,7 @@ export interface IFilterInputProps {
 	outlinedInputStyle?: any;
 	inputPropsStyle?: any;
 	disabled?: boolean;
+	multiline?: boolean;
 }
 
 export const FilterInput = ({
@@ -27,19 +28,22 @@ export const FilterInput = ({
 	formControlStyle,
 	outlinedInputStyle,
 	inputPropsStyle,
-	disabled
+	disabled,
+	multiline
 }: IFilterInputProps) => {
 	return (
 		<FormControl
 			className={formControlStyle || ''}
 			variant="outlined">
 			<OutlinedInput
+				multiline={multiline ? multiline : false}
 				disabled={disabled}
 				className={outlinedInputStyle || ''}
 				placeholder={placeholder}
 				inputProps={{
 					className: inputPropsStyle || ''
 				}}
+				maxRows={multiline ? 4 : 1}
 				endAdornment={
 					<InputAdornment position={position ? position : 'end'}>
 						<IconButton sx={{ marginRight: -1.7 }}>{icon}</IconButton>

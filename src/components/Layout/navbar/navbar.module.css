@@ -13,7 +13,7 @@
 	background: #fcfcfd;
 	opacity: 0.5;
 	width: 1px;
-	height: 33px;
+	height: 33px !important;
 }
 
 .linkLogo {

@@ -10,7 +10,7 @@
 
 .filterSearchInput {
 	min-height: 52px;
-	border-radius: 15px;
+	border-radius: 15px !important;
 	border: 2px solid #fcfcfd3a;
 }
 

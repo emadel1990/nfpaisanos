@@ -5,7 +5,7 @@ export const useStyles = makeStyles({
 		height: '50px',
 		display: 'flex',
 		alignItems: 'center',
-		'@media (min-width: 567px)': {
+		'@media (min-width: 750px)': {
 			display: 'none'
 		}
 	},
@@ -25,6 +25,8 @@ export const useStyles = makeStyles({
 		}
 	},
 	hamburger: {
-		color: '#777E91'
+		color: '#777E91',
+		width: '32px',
+		height: '32px'
 	}
 });

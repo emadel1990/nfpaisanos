@@ -1,0 +1,66 @@
+.logo {
+	width: 178px;
+	height: 32px;
+}
+
+.divider {
+	background: #fcfcfd;
+	opacity: 0.2;
+	width: 100%;
+}
+
+.dividerVertical {
+	background: #fcfcfd;
+	opacity: 0.5;
+	width: 1px;
+	height: 33px;
+}
+
+.linkLogo {
+	white-space: nowrap;
+	font-size: 14px;
+	line-height: 16px;
+	color: #777e91;
+	transition: all 250ms ease-in-out;
+}
+
+.linkLogo:hover {
+	color: #fcfcfd;
+	cursor: pointer;
+}
+
+.btnConnect {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	padding: 12px 16px;
+	gap: 12px;
+	width: 137px;
+	height: 40px;
+	color: #fcfcfd;
+	cursor: pointer;
+	border: 2px solid #777e91;
+	background-color: transparent;
+	border-radius: 90px;
+	transition: all 250ms ease-in-out;
+}
+
+.btnConnect:hover {
+	background-color: #777e919a;
+}
+
+@media (max-width: 750px) {
+	.divider,
+	.btnConnect,
+	.dividerVertical,
+	.linkLogo {
+		display: none;
+	}
+	.logo {
+		width: 220px;
+		height: 70px;
+		margin: 32px;
+	}
+}

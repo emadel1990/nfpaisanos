@@ -13,7 +13,8 @@ import { Divider, Grid, Typography, Box } from '@mui/material';
 const poppins = Poppins({
 	weight: '400',
 	style: 'normal',
-	subsets: ['latin']
+	subsets: ['latin'],
+	display: 'swap'
 });
 
 export const Footer = () => {

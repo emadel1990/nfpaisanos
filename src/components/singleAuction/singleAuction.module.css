@@ -22,7 +22,7 @@
 	cursor: pointer;
 	border: 2px solid #777e91;
 	background-color: transparent;
-	border-radius: 90px;
+	border-radius: 90px !important;
 	margin-bottom: 100px;
 	transition: all 250ms ease-in-out;
 }
